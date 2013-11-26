@@ -19,10 +19,10 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import uk.co.senab.bitmapcache.BitmapLruCache;
-import uk.co.senab.bitmapcache.CacheableBitmapDrawable;
+/*import uk.co.senab.bitmapcache.BitmapLruCache;
+import uk.co.senab.bitmapcache.CacheableBitmapDrawable;*/
 
-public class FoodItemLoader extends SimpleItemLoader<FoodPair, CacheableBitmapDrawable[]> {
+public class FoodItemLoader {/*extends SimpleItemLoader<FoodPair, CacheableBitmapDrawable[]> {
 
     final BitmapLruCache mCache;
 
@@ -101,7 +101,7 @@ public class FoodItemLoader extends SimpleItemLoader<FoodPair, CacheableBitmapDr
 
         result[0].setTileModeXY(TileMode.REPEAT, TileMode.REPEAT);
 
-        if (fromMemory) {
+        *//*if (fromMemory) {
             holder.strangerFoodImage.setImageDrawable(result[FoodPair.STRANGER_FOOD]);
         } else {
             BitmapDrawable emptyDrawable = new BitmapDrawable(itemView.getResources());
@@ -114,7 +114,7 @@ public class FoodItemLoader extends SimpleItemLoader<FoodPair, CacheableBitmapDr
         }
         holder.strangerMapImage.setImageDrawable(result[FoodPair.STRANGER_MAP]);
         holder.userFoodImage.setImageDrawable(result[FoodPair.USER_FOOD]);
-        holder.userMapImage.setImageDrawable(result[FoodPair.USER_MAP]);
+        holder.userMapImage.setImageDrawable(result[FoodPair.USER_MAP]);*//*
     }
 
     @Override
@@ -137,5 +137,5 @@ public class FoodItemLoader extends SimpleItemLoader<FoodPair, CacheableBitmapDr
         }
 
         return is;
-    }
+    }*/
 }

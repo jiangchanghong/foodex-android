@@ -5,10 +5,10 @@ import android.content.Context;
 
 import java.io.File;
 
-import uk.co.senab.bitmapcache.BitmapLruCache;
+/*import uk.co.senab.bitmapcache.BitmapLruCache;*/
 
 public class App extends Application {
-    private BitmapLruCache mCache;
+/*    private BitmapLruCache mCache;
 
     @Override
     public void onCreate() {
@@ -30,5 +30,5 @@ public class App extends Application {
 
     public static App getInstance(Context context) {
         return (App) context.getApplicationContext();
-    }
+    }*/
 }

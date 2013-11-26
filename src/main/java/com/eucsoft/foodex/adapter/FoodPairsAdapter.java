@@ -2,6 +2,7 @@ package com.eucsoft.foodex.adapter;
 
 import android.content.Context;
 import android.content.res.Configuration;
+import android.support.v4.view.ViewPager;
 import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -80,8 +81,8 @@ public class FoodPairsAdapter extends BaseAdapter {
             convertView.setTag(holder);
 
             holder.bonAppetitButton = (ImageButton) convertView.findViewWithTag("bon_appetit_button");
-            holder.strangerFoodPager = (FoodPager) convertView.findViewWithTag("stranger");
-            holder.userFoodPager = (FoodPager) convertView.findViewWithTag("user");
+            holder.strangerFoodPager = (ViewPager) convertView.findViewWithTag("stranger");
+            holder.userFoodPager = (ViewPager) convertView.findViewWithTag("user");
             holder.viewSwitcher = (ViewSwitcher) convertView.findViewWithTag("viewSwitcher");
 
             convertView.setTag(holder);
@@ -89,9 +90,11 @@ public class FoodPairsAdapter extends BaseAdapter {
             holder.strangerFoodPager.setLayoutParams(foodImagesLayout);
             holder.userFoodPager.setLayoutParams(foodImagesLayout);
 
+            holder.strangerFoodPager.setAdapter(new UserAdapter());
+
             LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(foodImageSize, foodImageSize);
 
-            holder.strangerFoodImage = (ImageView) holder.strangerFoodPager.findViewWithTag("food");
+            /*holder.strangerFoodImage = (ImageView) holder.strangerFoodPager.findViewWithTag("food");
             holder.strangerMapImage = (ImageView) holder.strangerFoodPager.findViewWithTag("map");
             holder.userFoodImage = (ImageView) holder.userFoodPager.findViewWithTag("food");
             holder.userMapImage = (ImageView) holder.userFoodPager.findViewWithTag("map");
@@ -99,7 +102,7 @@ public class FoodPairsAdapter extends BaseAdapter {
             holder.strangerMapImage.setLayoutParams(lp);
             holder.strangerFoodImage.setLayoutParams(lp);
             holder.userMapImage.setLayoutParams(lp);
-            holder.userFoodImage.setLayoutParams(lp);
+            holder.userFoodImage.setLayoutParams(lp);*/
 
             View.OnClickListener foodClickListener = new View.OnClickListener() {
                 @Override
@@ -125,10 +128,10 @@ public class FoodPairsAdapter extends BaseAdapter {
                     }
                 }
             };
-            holder.strangerMapImage.setOnClickListener(foodClickListener);
+            /*holder.strangerMapImage.setOnClickListener(foodClickListener);
             holder.strangerFoodImage.setOnClickListener(foodClickListener);
             holder.userMapImage.setOnClickListener(foodClickListener);
-            holder.userFoodImage.setOnClickListener(foodClickListener);
+            holder.userFoodImage.setOnClickListener(foodClickListener);*/
 
             holder.bonAppetitButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -161,7 +164,7 @@ public class FoodPairsAdapter extends BaseAdapter {
 
 
         //TODO: replace with "Loading.." resource
-        holder.strangerFoodImage.setImageResource(R.drawable.bonappetit);
+        /*holder.strangerFoodImage.setImageResource(R.drawable.bonappetit);*/
 
         if (foodPair.stranger.isBonAppetit()) {
             holder.bonAppetitButton.setImageResource(R.drawable.bonappetit2);
@@ -246,15 +249,15 @@ public class FoodPairsAdapter extends BaseAdapter {
         public boolean animationInProgress = false;
 
         //views
-        public FoodPager strangerFoodPager;
-        public FoodPager userFoodPager;
+        public ViewPager strangerFoodPager;
+        public ViewPager userFoodPager;
         public ImageButton bonAppetitButton;
         public ViewSwitcher viewSwitcher;
 
-        public ImageView strangerFoodImage;
+       /* public ImageView strangerFoodImage;
         public ImageView strangerMapImage;
         public ImageView userFoodImage;
-        public ImageView userMapImage;
+        public ImageView userMapImage;*/
     }
 
 

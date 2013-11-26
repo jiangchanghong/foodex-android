@@ -18,7 +18,7 @@ import com.eucsoft.foodex.twowaygrid.async.AsyncTwoWayGridView;
 import com.eucsoft.foodex.twowaygrid.async.FoodItemLoader;
 import com.eucsoft.foodex.twowaygrid.async.ItemManager;
 
-import uk.co.senab.bitmapcache.BitmapLruCache;
+/*import uk.co.senab.bitmapcache.BitmapLruCache;*/
 
 
 public class HomeWallFragment extends Fragment {
@@ -30,15 +30,15 @@ public class HomeWallFragment extends Fragment {
 
         AsyncTwoWayGridView gridView = (AsyncTwoWayGridView) rootView.findViewById(R.id.main_grid);
 
-        BitmapLruCache cache = App.getInstance(container.getContext()).getBitmapCache();
-        FoodItemLoader loader = new FoodItemLoader(cache);
+        /*BitmapLruCache cache = App.getInstance(container.getContext()).getBitmapCache();
+        FoodItemLoader loader = new FoodItemLoader(cache);*/
 
-        ItemManager.Builder builder = new ItemManager.Builder(loader);
+        /*ItemManager.Builder builder = new ItemManager.Builder(loader);
         builder.setPreloadItemsEnabled(true).setPreloadItemsCount(5);
         builder.setThreadPoolSize(4);
         gridView.setItemManager(builder.build());
         gridView.setAdapter(new FoodPairsAdapter(container.getContext()));
-
+*/
         int delta;
         ImageButton takePictureButton = (ImageButton) rootView.findViewById(R.id.cameraButton);
         int takePictureButtonHeight = takePictureButton.getHeight();

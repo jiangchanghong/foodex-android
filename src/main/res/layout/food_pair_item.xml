@@ -11,43 +11,19 @@
         android:layout_width="fill_parent"
         android:tag="viewSwitcher">
 
-        <com.eucsoft.foodex.view.FoodPager
+        <ViewPager
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:orientation="horizontal"
             android:tag="stranger">
+        </ViewPager>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:tag="food"
-                android:src="@drawable/f" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:tag="map"
-                android:src="@drawable/bonappetit" />
-        </com.eucsoft.foodex.view.FoodPager>
-
-        <com.eucsoft.foodex.view.FoodPager
+        <ViewPager
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:orientation="horizontal"
             android:tag="user">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:tag="food"
-                android:src="@drawable/f" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:tag="map"
-                android:src="@drawable/f" />
-        </com.eucsoft.foodex.view.FoodPager>
+        </ViewPager>
     </ViewSwitcher>
 
     <RelativeLayout
