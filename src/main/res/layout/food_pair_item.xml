@@ -11,19 +11,17 @@
         android:layout_width="fill_parent"
         android:tag="viewSwitcher">
 
-        <ViewPager
+        <android.support.v4.view.ViewPager
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:orientation="horizontal"
             android:tag="stranger">
-        </ViewPager>
+        </android.support.v4.view.ViewPager>
 
-        <ViewPager
+        <android.support.v4.view.ViewPager
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:orientation="horizontal"
             android:tag="user">
-        </ViewPager>
+        </android.support.v4.view.ViewPager>
     </ViewSwitcher>
 
     <RelativeLayout
