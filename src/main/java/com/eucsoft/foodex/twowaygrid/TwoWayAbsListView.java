@@ -906,7 +906,7 @@ public abstract class TwoWayAbsListView extends TwoWayAdapterView<ListAdapter> i
     @Override
     public Parcelable onSaveInstanceState() {
         /*
-		 * This doesn't really make sense as the place to dismiss the
+         * This doesn't really make sense as the place to dismiss the
 		 * popups, but there don't seem to be any other useful hooks
 		 * that happen early enough to keep from getting complaints
 		 * about having leaked the window.
@@ -944,7 +944,7 @@ public abstract class TwoWayAbsListView extends TwoWayAdapterView<ListAdapter> i
                 ss.position = 0;
             }
         }
-		/*
+        /*
         ss.filter = null;
         if (mFiltered) {
             final EditText textFilter = mTextFilter;
@@ -1544,7 +1544,7 @@ public abstract class TwoWayAbsListView extends TwoWayAdapterView<ListAdapter> i
     protected void dispatchDraw(Canvas canvas) {
         int saveCount = 0;
         //TODO????
-		/*
+        /*
         final boolean clipToPadding = (mGroupFlags & CLIP_TO_PADDING_MASK) == CLIP_TO_PADDING_MASK;
         if (clipToPadding) {
             saveCount = canvas.save();
@@ -1566,7 +1566,7 @@ public abstract class TwoWayAbsListView extends TwoWayAdapterView<ListAdapter> i
         if (drawSelectorOnTop) {
             drawSelector(canvas);
         }
-		/*
+        /*
         if (clipToPadding) {
             canvas.restoreToCount(saveCount);
             mGroupFlags |= CLIP_TO_PADDING_MASK;
@@ -1770,7 +1770,7 @@ public abstract class TwoWayAbsListView extends TwoWayAdapterView<ListAdapter> i
         final ViewTreeObserver treeObserver = getViewTreeObserver();
         if (treeObserver != null) {
             treeObserver.addOnTouchModeChangeListener(this);
-			/*
+            /*
             if (mTextFilterEnabled && mPopup != null && !mGlobalLayoutListenerAddedFilter) {
                 treeObserver.addOnGlobalLayoutListener(this);
             }*/

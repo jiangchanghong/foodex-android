@@ -1542,7 +1542,7 @@ public class TwoWayGridView extends TwoWayAbsListView {
 
             if (rowDelta > 0) {
                 /*
-				 * Case 1: Scrolling down.
+                 * Case 1: Scrolling down.
 				 */
 
                 final int oldBottom = mReferenceViewInSelectedRow == null ? 0 :
@@ -1553,8 +1553,8 @@ public class TwoWayGridView extends TwoWayAbsListView {
 
                 adjustForBottomFadingEdge(referenceView, topSelectionPixel, bottomSelectionPixel);
             } else if (rowDelta < 0) {
-				/*
-				 * Case 2: Scrolling up.
+                /*
+                 * Case 2: Scrolling up.
 				 */
                 final int oldTop = mReferenceViewInSelectedRow == null ?
                         0 : mReferenceViewInSelectedRow.getTop();
@@ -1564,8 +1564,8 @@ public class TwoWayGridView extends TwoWayAbsListView {
 
                 adjustForTopFadingEdge(referenceView, topSelectionPixel, bottomSelectionPixel);
             } else {
-				/*
-				 * Keep selection where it was
+                /*
+                 * Keep selection where it was
 				 */
                 final int oldTop = mReferenceViewInSelectedRow == null ?
                         0 : mReferenceViewInSelectedRow.getTop();

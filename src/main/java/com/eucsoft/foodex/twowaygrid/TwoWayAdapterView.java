@@ -875,7 +875,7 @@ public abstract class TwoWayAdapterView<T extends Adapter> extends ViewGroup {
 
         // we fire selection events here not in View
         /* taken out for backward compatibility
-		if (mSelectedPosition != ListView.INVALID_POSITION && isShown() && !isInTouchMode()) {
+        if (mSelectedPosition != ListView.INVALID_POSITION && isShown() && !isInTouchMode()) {
 			sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_SELECTED);
 		}*/
     }
@@ -895,7 +895,7 @@ public abstract class TwoWayAdapterView<T extends Adapter> extends ViewGroup {
     }
 
 	/* taken out for backward compatibility
-	@Override
+    @Override
 	public boolean dispatchPopulateAccessibilityEvent(AccessibilityEvent event) {
 		boolean populated = false;
 		// This is an exceptional case which occurs when a window gets the
